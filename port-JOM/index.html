@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Javier Mauricio Ortiz Millán — Desarrollador de software junior en Cali, especializado en desarrollo web, automatización e integración de sistemas."
+    />
+    <title>Javier Ortiz — Desarrollador de software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-skeleton" aria-hidden="true">
+      <div class="skeleton-header skeleton-block"></div>
+      <div class="skeleton-hero">
+        <div class="skeleton-copy">
+          <span class="skeleton-line skeleton-short"></span>
+          <span class="skeleton-line skeleton-title"></span>
+          <span class="skeleton-line skeleton-title skeleton-title-small"></span>
+          <span class="skeleton-line skeleton-text"></span>
+          <span class="skeleton-line skeleton-text skeleton-text-short"></span>
+        </div>
+        <div class="skeleton-art skeleton-block"></div>
+      </div>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">JO<span>.</span></a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
+        <a href="#experiencia" data-i18n="navExperience">Experiencia</a>
+        <a href="#stack" data-i18n="navStack">Stack</a>
+        <a href="#proceso" data-i18n="navProcess">Proceso</a>
+        <a href="#formacion" data-i18n="navEducation">Formación</a>
+        <a href="#sobre-mi" data-i18n="navAbout">Sobre mí</a>
+        <a href="#contacto" data-i18n="navContact">Contacto</a>
+      </nav>
+      <div class="header-tools">
+        <button class="theme-toggle" type="button" aria-label="Activar modo oscuro" aria-pressed="false">
+          <span class="theme-icon" aria-hidden="true">◐</span><span class="theme-label">Modo</span>
+        </button>
+        <div class="language-switch" role="group" aria-label="Seleccionar idioma">
+          <button type="button" class="language-button is-active" data-language="es">ES</button>
+          <span>/</span>
+          <button type="button" class="language-button" data-language="en">EN</button>
+        </div>
+        <a class="header-cta" href="#contacto" data-i18n="headerCta">Contáctame <span>↗</span></a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> <span data-i18n="heroEyebrow">Desarrollador de software junior</span></p>
+          <h1><span data-i18n="heroTitle">Desarrollador de software</span> <em data-i18n="heroTitleAccent">web y automatización.</em></h1>
+          <p class="hero-description" data-i18n="heroDescription">
+            Soy Javier, desarrollador Full Stack enfocado en desarrollo web, automatización
+            de procesos e integración de servicios con inteligencia artificial.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#proyectos"><span data-i18n="heroProjects">Ver proyectos</span> <span>↓</span></a>
+            <a class="text-link" href="Javier_Ortiz_Hoja_de_Vida.pdf" download><span data-i18n="heroResume">Descargar hoja de vida</span> <span>↗</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Información profesional">
+            <span data-i18n="heroLocation">Cali, Colombia</span>
+            <span data-i18n="heroEducation">Tecnólogo en Desarrollo de Software</span>
+            <span data-i18n="heroAvailability">Abierto a oportunidades</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Ilustración abstracta con las iniciales de Javier Ortiz">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="sun"></div>
+          <div class="hero-note note-top">ideas<br />+ código</div>
+          <div class="hero-note note-bottom">scroll<br />para explorar ↓</div>
+          <div class="hero-initials">J<span>O</span></div>
+          <div class="hero-terminal" aria-label="Vista previa de automatización">
+            <div class="terminal-bar"><i></i><i></i><i></i><span>automation.js</span></div>
+            <pre><code><b>const</b> process = <em>async</em> () =&gt; {
+  <b>await</b> api.connect();
+  <b>return</b> automation.run();
+};</code></pre>
+            <div class="terminal-status"><span></span><span data-i18n="terminalStatus">process completed</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="marquee" aria-label="Especialidades">
+        <div class="marquee-track">
+          <span>FULL STACK</span><i>✳</i><span>AUTOMATIZACIÓN</span><i>✳</i>
+          <span>INTELIGENCIA ARTIFICIAL</span><i>✳</i><span>FULL STACK</span><i>✳</i>
+          <span>AUTOMATIZACIÓN</span><i>✳</i>
+        </div>
+      </section>
+
+      <section class="projects section-shell" id="proyectos">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="projectsEyebrow">01 / Trabajo seleccionado</p>
+              <h2><span data-i18n="projectsTitle">Soluciones con</span><br /><em data-i18n="projectsTitleAccent">propósito.</em></h2>
+          </div>
+          <p class="section-intro" data-i18n="projectsIntro">Proyectos donde desarrollo, datos y automatización se combinan para resolver problemas reales.</p>
+        </div>
+        <div class="project-grid">
+          <a class="project-card project-large" href="#experiencia" aria-label="Conocer el proyecto de comercio electrónico">
+            <div class="project-visual numa">
+              <span class="visual-label">E-COMMERCE</span>
+              <div class="numa-card">
+                <span>Catálogo</span>
+                <strong>API<span>+</span></strong>
+                <small>React · Supabase · Azure</small>
+              </div>
+            </div>
+            <div class="project-meta"><div><h3 data-i18n="projectEcommerce">Plataforma e-commerce</h3><p>Full Stack · Cloud · API REST</p></div><span class="arrow">↗</span></div>
+            <div class="project-impact" data-i18n="ecommerceImpact">Catálogo, inventario, pedidos, pagos y reseñas en una sola plataforma.</div>
+          </a>
+          <a class="project-card project-offset" href="#experiencia" aria-label="Conocer el proyecto de automatización documental">
+            <div class="project-visual alma">
+              <div class="alma-flower">✳</div>
+              <span class="visual-label">AUTOMATIZACIÓN</span>
+              <div class="alma-line"></div>
+            </div>
+            <div class="project-meta"><div><h3 data-i18n="projectAutomation">Automatización documental</h3><p>Python · Pandas · OpenPyXL</p></div><span class="arrow">↗</span></div>
+            <div class="project-impact" data-i18n="automationImpact">ETL, validaciones y reportes para organizar procesos documentales.</div>
+          </a>
+          <a class="project-card" href="#experiencia" aria-label="Conocer el proyecto TransMedina">
+            <div class="project-visual lumen">
+              <span class="lumen-word">TransMedina</span>
+              <span class="lumen-caption" data-i18n="projectTransportVisual">Plataforma web de transporte</span>
+              <div class="lumen-circle"></div>
+            </div>
+            <div class="project-meta"><div><h3>TransMedina</h3><p>Django · Python · SQL</p></div><span class="arrow">↗</span></div>
+            <div class="project-impact" data-i18n="transportImpact">Plataforma web para gestionar servicios de transporte.</div>
+          </a>
+        </div>
+      </section>
+
+      <section class="process section-shell" id="proceso">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="processEyebrow">04 / Cómo trabajo</p>
+            <h2><span data-i18n="processTitle">Del problema</span><br /><em data-i18n="processTitleAccent">a la solución.</em></h2>
+          </div>
+          <p class="section-intro" data-i18n="processIntro">Un proceso claro para construir software útil, mantenible y preparado para crecer.</p>
+        </div>
+        <div class="process-grid">
+          <article><strong>01</strong><h3 data-i18n="processOneTitle">Entender</h3><p data-i18n="processOneText">Analizo el proceso, sus reglas de negocio y el resultado que necesita el equipo.</p></article>
+          <article><strong>02</strong><h3 data-i18n="processTwoTitle">Diseñar</h3><p data-i18n="processTwoText">Defino datos, integraciones y una arquitectura adecuada al alcance del producto.</p></article>
+          <article><strong>03</strong><h3 data-i18n="processThreeTitle">Construir</h3><p data-i18n="processThreeText">Desarrollo por partes, integro servicios y mantengo el código versionado.</p></article>
+          <article><strong>04</strong><h3 data-i18n="processFourTitle">Validar</h3><p data-i18n="processFourText">Pruebo flujos, valido respuestas y documento lo necesario para entregar con confianza.</p></article>
+        </div>
+      </section>
+
+      <section class="architecture section-shell" id="arquitectura">
+        <div class="architecture-copy">
+          <p class="eyebrow" data-i18n="architectureEyebrow">05 / Arquitectura</p>
+          <h2><span data-i18n="architectureTitle">Conecto las piezas</span><br /><em data-i18n="architectureTitleAccent">que hacen posible el producto.</em></h2>
+          <p data-i18n="architectureText">Frontend, APIs, bases de datos, automatización e inteligencia artificial trabajando como un sistema.</p>
+          <a class="text-link" href="https://github.com/maurxio" target="_blank" rel="noreferrer"><span data-i18n="architectureLink">Explorar mi GitHub</span> <span>↗</span></a>
+        </div>
+        <div class="architecture-map" aria-label="Diagrama de arquitectura">
+          <div class="arch-node arch-front">React / Vite</div>
+          <span class="arch-arrow">→</span>
+          <div class="arch-node arch-api">API REST</div>
+          <span class="arch-arrow">→</span>
+          <div class="arch-node arch-data">PostgreSQL<br />Supabase</div>
+          <div class="arch-branch"><span>↓</span><div class="arch-node arch-ai">Azure / LLMs</div></div>
+        </div>
+      </section>
+
+      <section class="experience section-shell" id="experiencia">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="experienceEyebrow">04 / Experiencia</p>
+            <h2><span data-i18n="experienceTitle">Experiencia que</span><br /><em data-i18n="experienceTitleAccent">automatiza.</em></h2>
+          </div>
+          <p class="section-intro" data-i18n="experienceIntro">Una mirada a los problemas que he resuelto con software, automatización e integración de sistemas.</p>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-date">SEP 2025 — AGO 2026</div>
+            <div class="timeline-content">
+              <p class="eyebrow">REGENCY S.A.S. · CALI</p>
+              <h3 data-i18n="jobTitle">Auxiliar de TI / Desarrollador de soluciones</h3>
+              <p data-i18n="jobDescription">Desarrollé soluciones de automatización documental con Python, ETL, validaciones y reportes. También construí automatizaciones con JavaScript, Node.js y Playwright, integré API REST y exploré soluciones con LLMs, Azure y Power Automate.</p>
+              <div class="tag-list"><span>Python</span><span>Playwright</span><span>Azure</span><span>LLMs</span><span>Power Automate</span></div>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-date" data-i18n="independentDate">PROYECTO INDEPENDIENTE · 12 MESES</div>
+            <div class="timeline-content">
+              <p class="eyebrow">FULL STACK · CLOUD</p>
+              <h3 data-i18n="ecommerceExperience">Plataforma de comercio electrónico</h3>
+              <p data-i18n="ecommerceDescription">Frontend con React 19 y Vite, backend integrado mediante API REST, autenticación con Supabase y PostgreSQL, y una arquitectura organizada por dominios para usuarios, productos, inventario, pedidos y pagos.</p>
+              <div class="tag-list"><span>React 19</span><span>Supabase</span><span>PostgreSQL</span><span>Vite</span><span>Azure</span></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="toolkit section-shell" id="stack">
+        <div class="toolkit-heading">
+          <p class="eyebrow" data-i18n="stackEyebrow">05 / Stack tecnológico</p>
+          <h2 data-i18n="stackTitle">Herramientas para<br /><em>crear y escalar.</em></h2>
+        </div>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3 data-i18n="skillWeb">Desarrollo web</h3>
+            <p>React · JavaScript · TypeScript · Node.js · Django · HTML · CSS · Vite</p>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skillAutomation">Automatización e integración</h3>
+            <p>Python · Playwright · n8n · Power Automate · RPA · API REST · Web scraping</p>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skillData">Datos e infraestructura</h3>
+            <p>PostgreSQL · MySQL · MongoDB · Docker · Linux · Git · Azure · CI/CD</p>
+          </div>
+          <div class="skill-group">
+            <h3 data-i18n="skillQuality">Calidad e inteligencia artificial</h3>
+            <p>Playwright E2E · Postman · QA · Ollama · LLMs · Prompt design · Debugging</p>
+          </div>
+        </div>
+        <div class="credentials">
+          <p class="eyebrow" data-i18n="credentialsEyebrow">Formación y certificaciones</p>
+          <p data-i18n="credentialsText">Tecnólogo en Desarrollo de Software · Universidad del Valle<br />Scrum Foundation Professional Certification · Claude Platform 101</p>
+        </div>
+      </section>
+
+      <section class="about section-shell" id="sobre-mi">
+        <div class="about-portrait">
+          <img src="profile.jpeg" alt="Javier Mauricio Ortiz Millán" />
+          <span class="portrait-label" data-i18n="portraitLabel">Desarrollador de software</span>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow" data-i18n="aboutEyebrow">06 / Sobre mí</p>
+          <h2><span data-i18n="aboutTitle">Desarrollador por vocación.</span><br /><em data-i18n="aboutTitleAccent">Enfocado en resolver.</em></h2>
+          <p data-i18n="aboutText">
+            Soy Tecnólogo en Desarrollo de Software de la Universidad del Valle. Me interesa
+            convertir procesos complejos en herramientas claras, mantenibles y eficientes,
+            usando código, automatización y buenas prácticas de ingeniería.
+          </p>
+          <a class="text-link" href="https://github.com/maurxio" target="_blank" rel="noreferrer"><span data-i18n="githubLink">Ver mi GitHub</span> <span>↗</span></a>
+        </div>
+        <div class="about-facts">
+          <div><strong>03</strong><span data-i18n="factProjects">proyectos<br />destacados</span></div>
+          <div><strong>02</strong><span data-i18n="factCertifications">certificaciones<br />profesionales</span></div>
+          <div><strong>B1</strong><span data-i18n="factEnglish">nivel de<br />inglés</span></div>
+        </div>
+      </section>
+
+      <section class="education section-shell" id="formacion">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="educationEyebrow">07 / Formación</p>
+            <h2><span data-i18n="educationTitle">Aprendizaje que</span><br /><em data-i18n="educationTitleAccent">se convierte en práctica.</em></h2>
+          </div>
+          <p class="section-intro" data-i18n="educationIntro">Formación académica y certificaciones que respaldan mi perfil técnico.</p>
+        </div>
+        <div class="education-grid">
+          <article class="education-card education-main">
+            <span class="education-year">2023 — 2026</span>
+            <h3 data-i18n="degreeTitle">Tecnólogo en Desarrollo de Software</h3>
+            <p>Universidad del Valle · Cali, Colombia</p>
+            <span class="education-status" data-i18n="degreeStatus">Formación tecnológica</span>
+          </article>
+          <article class="education-card">
+            <span class="education-year">2025</span>
+            <h3>Claude Platform 101</h3>
+            <p>Anthropic</p>
+            <a href="certificate-v8aqud6mpcua-1793122508.pdf" target="_blank" rel="noreferrer" class="certificate-link" data-i18n="viewCertificate">Ver certificado ↗</a>
+          </article>
+          <article class="education-card">
+            <span class="education-year">2025</span>
+            <h3>Claude 101</h3>
+            <p>Anthropic</p>
+            <a href="certificado antrophic 101.pdf" target="_blank" rel="noreferrer" class="certificate-link" data-i18n="viewCertificate">Ver certificado ↗</a>
+          </article>
+          <article class="education-card">
+            <span class="education-year">2025</span>
+            <h3>Claude Code in Action</h3>
+            <p>Anthropic</p>
+            <a href="certificate-uraw4h36jb9d-1793465439.pdf" target="_blank" rel="noreferrer" class="certificate-link" data-i18n="viewCertificate">Ver certificado ↗</a>
+          </article>
+          <article class="education-card">
+            <span class="education-year">2026</span>
+            <h3 data-i18n="diplomaTitle">Diploma de Tecnólogo en Desarrollo de Software</h3>
+            <p>Universidad del Valle · Ministerio de Educación Nacional</p>
+            <a href="carta de diploma.pdf" target="_blank" rel="noreferrer" class="certificate-link" data-i18n="viewDocument">Ver diploma ↗</a>
+          </article>
+          <article class="education-card">
+            <span class="education-year">2024</span>
+            <h3>Scrum Foundation Professional Certification</h3>
+            <p>CertiProf</p>
+            <span class="certificate-link" data-i18n="listedInResume">Certificación incluida en el CV</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="academic section-shell" id="academicos">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow" data-i18n="academicEyebrow">08 / Proyectos académicos</p>
+            <h2><span data-i18n="academicTitle">También construyo</span><br /><em data-i18n="academicTitleAccent">para aprender.</em></h2>
+          </div>
+        </div>
+        <div class="academic-list">
+          <article><span>01</span><div><h3>TransMedina</h3><p data-i18n="transmedinaText">Plataforma web de transporte · Python, Django, Bootstrap, SQL y Git.</p></div></article>
+          <article><span>02</span><div><h3>HeartsVisual</h3><p data-i18n="heartsText">Aplicación web con visualización 3D · React, Vite, Three.js y WebGL.</p></div></article>
+          <article><span>03</span><div><h3>Hotel Nightmare</h3><p data-i18n="hotelText">Sistema de reservas hoteleras de escritorio · Java, Swing, JDBC, SQL y POO.</p></div></article>
+        </div>
+      </section>
+
+      <section class="contact section-shell" id="contacto">
+        <div>
+          <p class="eyebrow" data-i18n="contactEyebrow">09 / Contacto</p>
+          <h2><span data-i18n="contactTitle">¿Construimos algo</span><br /><em data-i18n="contactTitleAccent">increíble?</em></h2>
+        </div>
+        <div class="contact-side">
+          <p data-i18n="contactText">Estoy abierto a oportunidades en desarrollo de software, automatización e integración de sistemas.</p>
+          <a class="contact-email" href="mailto:javiermauriciootriz@gmail.com">javiermauriciootriz@gmail.com <span>↗</span></a>
+          <div class="socials"><a href="tel:+573185371512">+57 318 537 1512</a><a href="https://linkedin.com/in/javier-mauricio-ortiz" target="_blank" rel="noreferrer">LinkedIn</a><a href="https://github.com/maurxio" target="_blank" rel="noreferrer">GitHub</a></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-shell">
+      <span>© <span id="year"></span> Javier Ortiz</span>
+      <span>Hecho con código <span class="heart">♥</span></span>
+      <a href="#inicio" data-i18n="backTop">Volver arriba ↑</a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
